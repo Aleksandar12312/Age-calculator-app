@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+        <form>
+            <div class="input-form">
+                <label id="label-day">
+                    DAY
+                    <br>
+                    <input type="text" placeholder="DD" id="input-day">
+                    <br>
+                    <span class="hidden-error" id="error-day">This field is required</span>
+                </label>
+                <label id="label-month">
+                    MONTH
+                    <br>
+                    <input type="text" placeholder="MM" id="input-month">
+                    <br>
+                    <span class="hidden-error" id="error-month">This field is required</span>
+                </label>
+                <label id="label-year">
+                    YEAR
+                    <br>
+                    <input type="text" placeholder="YYYY" id="input-year">
+                    <br>
+                    <span class="hidden-error" id="error-year">This field is required</span>
+                </label>
+            </div>
+            <div class="line-button">
+
+                <hr>
+                <input type="submit" value="" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 46 44">
+                    <g fill="none" stroke="#FFF" stroke-width="2">
+                        <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/>
+
+                    </g>
+                </svg>
+            </div>
+
+        </form>
+
+
+
+
+    <div class="outputYears">
+        <p class="outputNumbers"><span class="numbers" id="output-year">--</span> years</p>
+        <p class="outputNumbers"><span class="numbers" id="output-month">--</span> months</p>
+        <p class="outputNumbers"><span class="numbers" id="output-day">--</span> days</p>
+    </div>
+</div>
+<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+</div>
+<script src="script.js"></script>
+</body>
+</html>
